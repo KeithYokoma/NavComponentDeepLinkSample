@@ -1,0 +1,2 @@
+include ':nav1', ':nav2'
+rootProject.name='nav_deeplink'

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/nav_deep_link">
+    <fragment
+        android:id="@+id/nav_deep_link"
+        android:name="dev.keithyokoma.nav1.DeepLinkFragment"
+        android:label="DeepLink">
+        <argument
+            android:name="code"
+            app:argType="string"/>
+        <argument
+            android:name="state"
+            app:argType="string"/>
+        <deepLink app:uri="nav1://deep/link?code={code}&amp;state={state}"/>
+    </fragment>
+</navigation>
